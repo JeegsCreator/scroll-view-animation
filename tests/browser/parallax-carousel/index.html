@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paralax Carousel</title>
+  <link rel="stylesheet" href="../output.css">
+</head>
+<body class="grid place-content-center min-h-screen bg-zinc-950">
+  <section class="w-[700px] aspect-video overflow-x-scroll overflow-y-hidden p-6 border border-zinc-700 rounded-lg">
+    <ul id="pics" class="flex h-full gap-8 ">
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/10.jpg" alt="Image #10" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/11.jpg" alt="Image #11" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/12.jpg" alt="Image #12" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/13.jpg" alt="Image #13" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/14.jpg" alt="Image #14" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/15.jpg" alt="Image #15" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/16.jpg" alt="Image #16" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/17.jpg" alt="Image #17" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/18.jpg" alt="Image #18" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/19.jpg" alt="Image #19" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/20.jpg" alt="Image #20" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/21.jpg" alt="Image #21" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/22.jpg" alt="Image #22" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/23.jpg" alt="Image #23" draggable="false">
+			
+		</li>
+		<li class="h-full min-w-[250px] relative overflow-clip">
+			<img class="object-cover block w-full h-full absolute right-0 animate-[adjust-image] animation-timeline-view animation-axis-x" src="https://scroll-driven-animations.style/demos/parallax-carousel/shared/img/24.jpg" alt="Image #24" draggable="false">
+			
+		</li>
+	</ul>
+  </section>
+</body>
+<style>
+  @keyframes adjust-image {
+    from {
+      object-position: 100% 0;
+    }
+
+    to {
+      object-position: 0 0;
+    }
+  }
+</style>
+<!-- <script>
+  async function getPhotos () {
+    const $pics = document.getElementById('pics')
+
+    const res = await fetch('https://api.unsplash.com/photos/?per_page=10&client_id=9UydL-JFiBVIKFMGv7ZSzjNIZd-3ZLk-WQdvQsVVFQ0')
+    const data = await res.json()
+
+    data.forEach((pic) => {
+      const $img = document.createElement('img')
+      $img.src = pic.urls.small_s3
+      $img.draggable = false
+      $img.style = `
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 200px;
+      `
+      const $li = document.createElement('li')
+      $li.style = `
+        overflow: hidden;
+        height: 100%;
+        min-width: 200px;
+      `
+      $li.append($img)
+      $pics.append($li)
+      console.log(pic)
+    })
+  }
+
+  getPhotos()
+</script> -->
+</html>

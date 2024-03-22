@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="../output.css">
+
+</head>
+<style>
+  img{
+    object-fit: cover;
+    max-width: 300px;
+    margin-bottom: 16px;
+  }
+
+  @keyframes enhance-header {
+    to{
+      background-color: #fff8;
+      backdrop-filter: blur(6px);
+      font-size: 1.7rem;
+      color: #000;
+      padding-block: 1rem;
+    }
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 100%;
+    }
+  }
+</style>
+<body class="bg-zinc-950">
+
+    <h1 class="text-center z-10 font-bold text-white text-4xl py-6 sticky top-0 animate-contract-vertically animation-timeline-scroll animation-range-e-sm">Unsplash Gallery</h1>
+  <div class="mb-[120px]">
+    <div id="pics" class="gap-4 columns-2 w-fit mx-auto [&>img]:animate-[reveal] [&>img]:animation-timeline-view [&>img]:animation-range-s-1/5 [&>img]:animation-range-e-3/4"></div>
+  </div>
+</body>
+
+<script>
+  async function getPhotos () {
+    const $pics = document.getElementById('pics')
+
+    const res = await fetch('https://api.unsplash.com/photos/?per_page=20&client_id=9UydL-JFiBVIKFMGv7ZSzjNIZd-3ZLk-WQdvQsVVFQ0')
+    const data = await res.json()
+
+    data.forEach((pic) => {
+      const $img = document.createElement('img')
+      $img.src = pic.urls.small_s3
+      $pics.append($img)
+      console.log(pic)
+    })
+  }
+
+  getPhotos()
+</script>
+</html>
