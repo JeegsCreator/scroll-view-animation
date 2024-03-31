@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/svelte": "^5.2.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@jeegscreator/scroll-view-animation": "^1.0.0",
     "@midudev/tailwind-animations": "^0.0.7",
     "astro": "^4.4.9",
     "bits-ui": "^0.21.1",

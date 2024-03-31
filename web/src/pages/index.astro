@@ -9,7 +9,7 @@ import Sooner from "../components/svelte/sooner.svelte";
   @keyframes appear-section {
     from {
       opacity: 0;
-      transform: translateX(-300px);
+      transform: translateX(-50px);
     }
 
     to {
@@ -34,7 +34,11 @@ import Sooner from "../components/svelte/sooner.svelte";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <meta
+      name="description"
+      content="TailwindCSS plugin to add animation-timeline support"
+    />
+    <title>Scroll/View Animation Plugin</title>
   </head>
   <body class="dark text-white bg-neutral-950 overflow-x-hidden">
     <div class="fixed w-full top-0 left-0 z-20">
@@ -50,7 +54,7 @@ import Sooner from "../components/svelte/sooner.svelte";
     >
     </div>
     <Header />
-    <div class="flex flex-col gap-20 items-center pb-32">
+    <div class="flex flex-col gap-20 items-center pb-16">
       <Section
         title="Animation Timeline"
         subtitle="Initialize the animation and choose which timeline will control it."
@@ -159,38 +163,18 @@ animation-axis-y /* The scrollbar on the vertical axis of the scroll container. 
 </div>`}
         />
         <ClassDoc
-          className="This page's opacity appear animation"
+          className="This page's appear animation"
           code={`<style>
   @keyframes appear {
     from {
       opacity: 0;
-      transform: translateX(-300px);
+      transform: translateX(-50px);
     }
 
     to {
       opacity: 100%;
-      transform: translateX(0);
+      transform: translateX(0px);
     }
-</style>
-<article
-  class="animate-[appear] animation-timeline-view animation-range-e-lg animation-range-s-xs"
->
-  ...
-</article>`}
-        />
-        <ClassDoc
-          className="And you can add more fun easily"
-          code={`<style>
-  @keyframes appear {
-    from {
-      opacity: 0;
-      trans
-    }
-
-    to {
-      opacity: 100%;
-    }
-  }
 </style>
 <article
   class="animate-[appear] animation-timeline-view animation-range-e-lg animation-range-s-xs"
@@ -199,6 +183,13 @@ animation-axis-y /* The scrollbar on the vertical axis of the scroll container. 
 </article>`}
         />
       </Section>
+    </div>
+    <div class="flex justify-center">
+      <a
+        class="pb-16 text-sm text-zinc-400 underline"
+        href="https://twitter.com/jeegscreator"
+        target="_blank">Made by Jeegs</a
+      >
     </div>
   </body>
 </html>

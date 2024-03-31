@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.4.9)(tailwindcss@3.4.1)
+  '@jeegscreator/scroll-view-animation':
+    specifier: ^1.0.0
+    version: 1.0.0(tailwindcss@3.4.1)
   '@midudev/tailwind-animations':
     specifier: ^0.0.7
     version: 0.0.7(tailwindcss@3.4.1)
@@ -690,6 +693,14 @@ packages:
       strip-ansi-cjs: /strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: /wrap-ansi@7.0.0
+    dev: false
+
+  /@jeegscreator/scroll-view-animation@1.0.0(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-Wgxbdt5uAJ/oTfFRFP+1jHE5KLpvwGv3eJpUF72vIDYnsFT4aW7Lw71cW8AfsG1SpDxPAWHfAlMSk++gUEGc9A==}
+    peerDependencies:
+      tailwindcss: ^3.4.1
+    dependencies:
+      tailwindcss: 3.4.1
     dev: false
 
   /@jridgewell/gen-mapping@0.3.5:
