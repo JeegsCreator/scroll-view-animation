@@ -1,4 +1,4 @@
-import scrollAnimationPlugin from "../src/index.js";
+import scrollViewAnimationsPlugin from "@jeegscreator/scroll-view-animation";
 import miduAnimationPlugins from "@midudev/tailwind-animations";
 
 /** @type {import('tailwindcss').Config} */
