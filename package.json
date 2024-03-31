@@ -1,6 +1,6 @@
 {
   "name": "@jeegscreator/scroll-view-animation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TailwindCSS plugin to easily add scroll and view animations.",
   "main": "./src/index.js",
   "type": "module",
