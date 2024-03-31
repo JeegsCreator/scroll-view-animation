@@ -36,5 +36,5 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: [scrollAnimationPlugin, miduAnimationPlugins],
+  plugins: [scrollViewAnimationsPlugin, miduAnimationPlugins],
 };
