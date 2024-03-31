@@ -1,0 +1,23 @@
+---
+import Code from "./Code.astro";
+
+interface Props {
+  className: string;
+  code: string;
+}
+
+const { className, code } = Astro.props;
+---
+
+<section
+  class="animate-[appear-section] animation-timeline-view animation-range-e-lg animation-range-s-[0]"
+>
+  <li class="mb-3">
+    <h3 class="text-xl inline">
+      <code>{className}:</code>
+    </h3>
+  </li>
+  <div class="px-6">
+    <Code lang="css" code={code} />
+  </div>
+</section>

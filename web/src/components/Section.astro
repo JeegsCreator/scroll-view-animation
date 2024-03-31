@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<article
+  class="w-[850px] animate-[appear-section] animation-timeline-view animation-range-e-lg animation-range-s-xs"
+>
+  <header class="mb-6">
+    <h2 class="text-3xl font-bold">{title}</h2>
+    <p class="text-lg text-zinc-400">
+      {subtitle}
+    </p>
+  </header>
+  <main class="space-y-8">
+    <slot />
+  </main>
+</article>

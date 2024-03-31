@@ -1,0 +1,28 @@
+---
+import { Code as AstroCode } from "astro:components";
+import ScrollArea from "./svelte/ScrollArea.svelte";
+
+interface Props {
+  code: string;
+  lang?: "html" | "css" | "javascript";
+  scroll?: boolean;
+}
+
+const { code, lang = "html", scroll } = Astro.props;
+---
+
+<div class="py-1 pr-1 bg-[#191724] rounded-lg">
+  {
+    scroll ? (
+      <ScrollArea class="" client:idle orientation="vertical">
+        <div class="px-6 py-3 text-sm [&_.line]:pb-3 [&_.line]:inline-block">
+          <AstroCode code={code} lang={lang} wrap theme="rose-pine" />
+        </div>
+      </ScrollArea>
+    ) : (
+      <div class="px-6 py-3 text-sm leading-relaxed">
+        <AstroCode code={code} lang={lang} wrap theme="rose-pine" />
+      </div>
+    )
+  }
+</div>

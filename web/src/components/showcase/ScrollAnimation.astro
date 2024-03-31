@@ -1,8 +1,12 @@
 <style>
-    @keyframes progress {
-        from {width: 0%; }
-        to { width: 100%; }
+  @keyframes progress {
+    from {
+      width: 0%;
     }
+    to {
+      width: 100%;
+    }
+  }
 </style>
 
 <html lang="en">
@@ -14,59 +18,132 @@
     <title>Astro</title>
   </head>
   <body>
-    <div class="overflow-auto relative w-[500px] h-[450px]"  id="scroll-root">
-    <div>
+    <div class="overflow-auto relative w-[500px] h-[450px]" id="scroll-root">
+      <div>
         <div class="h-2 top-0 fixed bg-transparent w-full">
-            <div class="h-2 bg-white w-full animate-[progress] animation-timeline-scroll animation-scroller-[nearest]"></div>
+          <div
+            class="h-2 bg-white w-full animate-[progress] animation-timeline-scroll animation-scroller-[nearest]"
+          >
+          </div>
         </div>
-    <div class="py-6 mx-auto [&_h2]:mb-4 [&_h2]:mt-6 [&_h2]:font-bold [&_h2]:text-lg mb-[80px] [&_p]:pb-2 [&_li]:pb-2">
-    <header class="text-center font-bold text-4xl py-12 text-balance">
-        <h1>The Magic of CSS Animations:<br/> Bringing Websites to Life</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Introduction to CSS Animations</h2>
-            <p>CSS animations have revolutionized web design by allowing developers to breathe life into their creations. Gone are the days of static, lifeless websites; today, with CSS animations, we can captivate users' attention, enhance user experience, and add a touch of magic to every interaction.</p>
-            <p>In this blog post, we'll explore the wonders of CSS animations, from the basics to advanced techniques, and discover how they can elevate your web projects to new heights.</p>
-        </section>
-        <section>
-            <h2>Understanding Key Concepts</h2>
-            <p>Before diving into the world of CSS animations, it's essential to understand some key concepts:</p>
-            <ul>
-                <li><strong>Transitions:</strong> CSS transitions allow for smooth changes between different states of an element. They are perfect for adding subtle effects like fading or sliding.</li>
-                <li><strong>Keyframes:</strong> Keyframes define the stages of an animation's movement and appearance. By specifying keyframes, you can create complex animations with precise control over timing and positioning.</li>
-                <li><strong>Animation Properties:</strong> CSS provides a range of properties to control animations, including duration, timing function, delay, and iteration count. Understanding how to manipulate these properties is crucial for creating compelling animations.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Practical Applications</h2>
-            <p>The versatility of CSS animations knows no bounds. Here are just a few examples of how they can be used:</p>
-            <ul>
-                <li><strong>Hover Effects:</strong> Add flair to your buttons and links with hover effects that respond to user interaction.</li>
-                <li><strong>Page Transitions:</strong> Smoothly transition between pages to create a seamless browsing experience.</li>
-                <li><strong>Animated Illustrations:</strong> Bring illustrations and graphics to life with animated sequences that engage users and convey information in a dynamic way.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Advanced Techniques</h2>
-            <p>Ready to take your animations to the next level? Consider exploring these advanced techniques:</p>
-            <ul>
-                <li><strong>JavaScript Integration:</strong> Combine CSS animations with JavaScript to create interactive experiences that respond to user input.</li>
-                <li><strong>Performance Optimization:</strong> Optimize your animations for performance by minimizing layout recalculations and leveraging hardware acceleration.</li>
-                <li><strong>Responsive Design:</strong> Ensure your animations adapt seamlessly to different screen sizes and devices for a consistent user experience.</li>
-            </ul>
-        </section>
-        <section class="bg-zinc-900 px-6 py-4 my-8 rounded-md">
-            <h2 class="!mt-0">Conclusion</h2>
-            <p>CSS animations have transformed the way we design and interact with websites. By mastering the art of animation, you can captivate your audience, convey information effectively, and create memorable user experiences that leave a lasting impression.</p>
-            <p>So what are you waiting for? Dive into the world of CSS animations and unleash your creativity!</p>
-        </section>
-    </main>
-    <footer class="mt-8 font-medium">
-        <p>Thank you for reading! Stay tuned for more insights and tutorials on web design and development.</p>
-    </footer>
+        <div
+          class="py-6 mx-auto [&_h2]:mb-4 [&_h2]:mt-6 [&_h2]:font-bold [&_h2]:text-lg mb-[80px] [&_p]:pb-2 [&_li]:pb-2"
+        >
+          <header class="text-center font-bold text-4xl py-12 text-balance">
+            <h1>
+              The Magic of CSS Animations:<br /> Bringing Websites to Life
+            </h1>
+          </header>
+          <main>
+            <section>
+              <h2>Introduction to CSS Animations</h2>
+              <p>
+                CSS animations have revolutionized web design by allowing
+                developers to breathe life into their creations. Gone are the
+                days of static, lifeless websites; today, with CSS animations,
+                we can captivate users' attention, enhance user experience, and
+                add a touch of magic to every interaction.
+              </p>
+              <p>
+                In this blog post, we'll explore the wonders of CSS animations,
+                from the basics to advanced techniques, and discover how they
+                can elevate your web projects to new heights.
+              </p>
+            </section>
+            <section>
+              <h2>Understanding Key Concepts</h2>
+              <p>
+                Before diving into the world of CSS animations, it's essential
+                to understand some key concepts:
+              </p>
+              <ul>
+                <li>
+                  <strong>Transitions:</strong> CSS transitions allow for smooth
+                  changes between different states of an element. They are perfect
+                  for adding subtle effects like fading or sliding.
+                </li>
+                <li>
+                  <strong>Keyframes:</strong> Keyframes define the stages of an animation's
+                  movement and appearance. By specifying keyframes, you can create
+                  complex animations with precise control over timing and positioning.
+                </li>
+                <li>
+                  <strong>Animation Properties:</strong> CSS provides a range of
+                  properties to control animations, including duration, timing function,
+                  delay, and iteration count. Understanding how to manipulate these
+                  properties is crucial for creating compelling animations.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Practical Applications</h2>
+              <p>
+                The versatility of CSS animations knows no bounds. Here are just
+                a few examples of how they can be used:
+              </p>
+              <ul>
+                <li>
+                  <strong>Hover Effects:</strong> Add flair to your buttons and links
+                  with hover effects that respond to user interaction.
+                </li>
+                <li>
+                  <strong>Page Transitions:</strong> Smoothly transition between
+                  pages to create a seamless browsing experience.
+                </li>
+                <li>
+                  <strong>Animated Illustrations:</strong> Bring illustrations and
+                  graphics to life with animated sequences that engage users and
+                  convey information in a dynamic way.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Advanced Techniques</h2>
+              <p>
+                Ready to take your animations to the next level? Consider
+                exploring these advanced techniques:
+              </p>
+              <ul>
+                <li>
+                  <strong>JavaScript Integration:</strong> Combine CSS animations
+                  with JavaScript to create interactive experiences that respond
+                  to user input.
+                </li>
+                <li>
+                  <strong>Performance Optimization:</strong> Optimize your animations
+                  for performance by minimizing layout recalculations and leveraging
+                  hardware acceleration.
+                </li>
+                <li>
+                  <strong>Responsive Design:</strong> Ensure your animations adapt
+                  seamlessly to different screen sizes and devices for a consistent
+                  user experience.
+                </li>
+              </ul>
+            </section>
+            <section class="bg-zinc-900 px-6 py-4 my-8 rounded-md">
+              <h2 class="!mt-0">Conclusion</h2>
+              <p>
+                CSS animations have transformed the way we design and interact
+                with websites. By mastering the art of animation, you can
+                captivate your audience, convey information effectively, and
+                create memorable user experiences that leave a lasting
+                impression.
+              </p>
+              <p>
+                So what are you waiting for? Dive into the world of CSS
+                animations and unleash your creativity!
+              </p>
+            </section>
+          </main>
+          <footer class="mt-8 font-medium">
+            <p>
+              Thank you for reading! Stay tuned for more insights and tutorials
+              on web design and development.
+            </p>
+          </footer>
+        </div>
+      </div>
     </div>
-    </div>
-</div>
   </body>
 </html>
