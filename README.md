@@ -25,4 +25,4 @@ export default {
 
 ## Documentation
 
-You can learn how to use this plugin going to
+You can learn how to use this plugin going to the [documentation](scroll-view-animation.vercel.app)
