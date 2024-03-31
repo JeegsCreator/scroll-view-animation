@@ -7,5 +7,5 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   integrations: [tailwind(), svelte()],
   site: "scroll-view-animation.vercel.app",
-  base: "./"
+  base: "."
 });
